@@ -90,20 +90,24 @@
             this.et_min.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.et_min.Location = new System.Drawing.Point(96, 12);
+            this.et_min.MaxLength = 3;
             this.et_min.Name = "et_min";
             this.et_min.Size = new System.Drawing.Size(45, 20);
             this.et_min.TabIndex = 3;
             this.et_min.Text = "1";
+            this.et_min.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // et_max
             // 
             this.et_max.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.et_max.Location = new System.Drawing.Point(96, 41);
+            this.et_max.MaxLength = 3;
             this.et_max.Name = "et_max";
             this.et_max.Size = new System.Drawing.Size(45, 20);
             this.et_max.TabIndex = 3;
             this.et_max.Text = "100";
+            this.et_max.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lbl_previous
             // 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dark.Net;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,18 @@ namespace Random1to100
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            IDarkNet darkNet = DarkNet.Instance;
+            Theme processTheme = Theme.Dark;
+            darkNet.SetCurrentProcessTheme(processTheme);
+            
+
+            Form mainForm = new Form1();
+            Theme windowTheme = Theme.Auto;
+            darkNet.SetWindowThemeForms(mainForm, windowTheme);     
+
+         
+            Application.Run(mainForm);
         }
     }
 }
