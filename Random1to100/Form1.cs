@@ -45,7 +45,7 @@ namespace Random1to100
             Theme theme = isDark ? Theme.Dark : Theme.Light;
             DarkNet.Instance.SetCurrentProcessTheme(theme);
 
-            BackColor = isDark ? Color.FromArgb(45, 45, 45) : Color.WhiteSmoke;
+            BackColor = isDark ? Color.FromArgb(0, 0, 0) : Color.WhiteSmoke;
             ForeColor = isDark ? Color.White : Color.Black;
 
             foreach (Control ctrl in Controls)
